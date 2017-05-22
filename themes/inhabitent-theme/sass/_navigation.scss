@@ -26,11 +26,20 @@ a {
 
 /* Menus */
 
-.main-navigation {
-	clear: both;
-	display: block;
-	float: left;
+.site-header {
+	display: flex;
 	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: 4rem;
+}
+
+
+.main-navigation {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	width: 75%;
 
 	ul {
 		display: none;
@@ -87,6 +96,10 @@ a {
 	a {
 		display: block;
 		text-decoration: none;
+		padding-left: 1rem;
+		padding-right: 1rem;
+    text-transform: uppercase;
+		color: #FFF;
 	}
 
 	.current_page_item > a,

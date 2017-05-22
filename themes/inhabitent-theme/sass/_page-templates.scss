@@ -3,3 +3,27 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+.site-branding {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+}
+
+.main-hero-banner {
+  //<img class="main-logo" src="/wordpress/wp-content/themes/inhabitent-theme/images/inhabitent-logo-full.svg">
+
+  	background: url("/wordpress/wp-content/themes/inhabitent-theme/images/inhabitent-logo-full.svg"), linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/wordpress/wp-content/themes/inhabitent-theme/images/home-hero.jpg");
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-size: contain, contain, cover;
+    background-position: center, center, top 5rem right 0 bottom 0 left 0;
+		height: 45rem;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		align-content: center;
+		align-items: center;
+}
