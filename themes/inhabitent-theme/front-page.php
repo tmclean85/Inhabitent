@@ -1,11 +1,6 @@
-<?php
-/**
- * The main template file.
- *
- * @package RED_Starter_Theme
- */
+<?php get_header(); ?>
+<?php hero_banner(); ?>
 
-get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -35,5 +30,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
+
 <?php get_footer(); ?>

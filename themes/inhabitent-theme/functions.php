@@ -140,3 +140,19 @@ function inhabitent_login_logo_url_title() {
 }
 add_filter( 'login_headertitle', 'inhabitent_login_logo_url_title' ); 
 
+//Hero banner
+
+function hero_banner() {
+  echo '<div class="hero-main">
+    <div class="main-logo-wrapper">
+    <img src="/wordpress/wp-content/themes/inhabitent-theme/images/inhabitent-logo-full.svg">
+    </div>
+    </div>';
+}
+
+function hero_banner_about() {
+  echo '<div class="hero-about">
+    <div class="main-logo-wrapper">
+    </div>
+    </div>';
+}

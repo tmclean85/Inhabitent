@@ -4,7 +4,6 @@
  *
  * @package RED_Starter_Theme
  */
-
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
@@ -18,7 +17,6 @@
 
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
-			<div class="hero-main">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
@@ -31,12 +29,10 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<i class="fa fa-search" aria-hidden="true"></i>
 				</nav><!-- #site-navigation -->
 				</header><!-- #masthead -->
-				<div class="main-logo-wrapper">
-				<img src="/wordpress/wp-content/themes/inhabitent-theme/images/inhabitent-logo-full.svg">
-				</div> <!-- .main-logo=-wrapper -->
-				</div> <!-- .hero-main -->
+
 <!--Code for search here-->
 
 

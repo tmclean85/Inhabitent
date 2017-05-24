@@ -4,6 +4,7 @@
 
 /* Posts and pages */
 
+
 .sticky {
 	display: block;
 }
@@ -46,6 +47,16 @@
 	height: 35rem;
 	display: flex;
 	justify-content: center;
+}
+
+.hero-about {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/wordpress/wp-content/themes/inhabitent-theme/images/about-hero.jpg");
+  background-repeat: no-repeat, repeat-x;
+  background-size: contain, cover;
+  background-position: center, top 5rem right 0 bottom 0 left 0;
+	height: 45rem;
+	display: flex;
+	flex-direction: column;		
 }
 
 /* Asides */

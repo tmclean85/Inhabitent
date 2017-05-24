@@ -223,44 +223,44 @@ th {
 # Embedded Fonts
 --------------------------------------------------------------*/
 @font-face {
-  font-family: 'merriweatherbold';
-  src: url("merriweather-bold-webfont.eot");
-  src: url("merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("merriweather-bold-webfont.woff2") format("woff2"), url("merriweather-bold-webfont.ttf") format("truetype"), url("merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  font-family: 'Merriweather Web';
+  src: url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-bold-webfont.eot");
+  src: url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-bold-webfont.woff2") format("woff2"), url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-bold-webfont.ttf") format("truetype"), url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather Web';
+  src: url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-bolditalic-webfont.eot");
+  src: url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather Web';
+  src: url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-light-webfont.eot");
+  src: url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-light-webfont.woff2") format("woff2"), url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-light-webfont.ttf") format("truetype"), url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'merriweatherbold_italic';
-  src: url("merriweather-bolditalic-webfont.eot");
-  src: url("merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("merriweather-bolditalic-webfont.woff2") format("woff2"), url("merriweather-bolditalic-webfont.ttf") format("truetype"), url("merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
+  font-family: 'Merriweather Web';
+  src: url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-lightitalic-webfont.eot");
+  src: url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("/wordpress/wp-content/themes/inhabitent-theme/fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
   font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Novecento Web';
+  src: url("/wordpress/wp-content/themes/inhabitent-theme/fonts/novecentosanswide-demibold-webfont.eot");
+  src: url("/wordpress/wp-content/themes/inhabitent-theme/fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("/wordpress/wp-content/themes/inhabitent-theme/fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("/wordpress/wp-content/themes/inhabitent-theme/fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("/wordpress/wp-content/themes/inhabitent-theme/fonts/novecentosanswide-demibold-webfont.svg#novecentosanswide-demibold") format("svg");
+  font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'merriweatherlight';
-  src: url("merriweather-light-webfont.eot");
-  src: url("merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("merriweather-light-webfont.woff2") format("woff2"), url("merriweather-light-webfont.ttf") format("truetype"), url("merriweather-light-webfont.svg#merriweatherlight") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'merriweatherlight_italic';
-  src: url("merriweather-lightitalic-webfont.eot");
-  src: url("merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("merriweather-lightitalic-webfont.woff2") format("woff2"), url("merriweather-lightitalic-webfont.ttf") format("truetype"), url("merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'novecentosanswide-demibold';
-  src: url("novecentosanswide-demibold-webfont.eot");
-  src: url("novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("novecentosanswide-demibold-webfont.woff2") format("woff2"), url("novecentosanswide-demibold-webfont.ttf") format("truetype"), url("novecentosanswide-demibold-webfont.svg#merriweatherlight_italic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'novecentosanswide-normal';
-  src: url("novecentosanswide-demibold-normal.eot");
-  src: url("novecentosanswide-demibold-normal.eot?#iefix") format("embedded-opentype"), url("novecentosanswide-demibold-normal.woff2") format("woff2"), url("novecentosanswide-demibold-webfont.ttf") format("truetype"), url("novecentosanswide-demibold-webfont.svg#merriweatherlight_italic") format("svg");
+  font-family: 'Novecento Web';
+  src: url("/wordpress/wp-content/themes/inhabitent-theme/fonts/novecentosanswide-normal-webfont.eot");
+  src: url("/wordpress/wp-content/themes/inhabitent-theme/fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("/wordpress/wp-content/themes/inhabitent-theme/fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("/wordpress/wp-content/themes/inhabitent-theme/fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("/wordpress/wp-content/themes/inhabitent-theme/fonts/novecentosanswide-normal-webfont.svg#novecentosanswide-normal") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -273,14 +273,20 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: 'Merriweather Web';
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: 'Novecento Web';
+  text-transform: uppercase; }
+
+aside h2 {
+  color: #D99054;
+  font-size: 1.5rem; }
 
 /* Copy */
 p {
@@ -321,6 +327,9 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+.bold-text {
+  font-weight: bold; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -380,6 +389,15 @@ img {
 table {
   margin: 0 0 1.5rem;
   width: 100%; }
+
+i {
+  padding-right: 0.5rem;
+  color: #FFF; }
+
+p a {
+  font-family: 'Merriweather Web';
+  font-weight: normal;
+  font-style: bold; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -461,6 +479,10 @@ a {
     outline: 0; }
 
 /* Menus */
+#masthead {
+  position: fixed;
+  background: rgba 255, 255, 255, 0.25%; }
+
 .site-header {
   display: -ms-flexbox;
   display: flex;
@@ -469,7 +491,10 @@ a {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  height: 4rem; }
+  height: 4rem;
+  font-family: 'Novecento Web';
+  font-weight: normal;
+  font-style: normal; }
 
 .main-navigation {
   display: -ms-flexbox;
@@ -657,6 +682,17 @@ a {
   -ms-flex-pack: center;
       justify-content: center; }
 
+.hero-about {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/wordpress/wp-content/themes/inhabitent-theme/images/about-hero.jpg");
+  background-repeat: no-repeat, repeat-x;
+  background-size: contain, cover;
+  background-position: center, top 5rem right 0 bottom 0 left 0;
+  height: 45rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
 /* Asides */
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
@@ -760,3 +796,43 @@ object {
       align-content: center;
   -ms-flex-align: center;
       align-items: center; }
+
+.footer-wrapper {
+  background-image: url("/wordpress/wp-content/themes/inhabitent-theme/images/dark-wood.png");
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  height: 20rem; }
+  .footer-wrapper h3 {
+    color: #D99054; }
+  .footer-wrapper p, .footer-wrapper a {
+    color: white; }
+
+#colophon {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 10rem; }
+
+.footer-box {
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  height: 12rem;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-left: 5rem;
+  padding-bottom: 5rem; }
+
+.site-info p {
+  text-align: center;
+  font-family: 'Novecento Web'; }
