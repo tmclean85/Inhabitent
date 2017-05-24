@@ -59,6 +59,15 @@
 	flex-direction: column;		
 }
 
+.home-posts-wrapper {
+   display: flex;
+	 flex-flow: row nowrap;
+   ul {
+		 list-style-type: none;
+		 text-align: center;
+	 }
+}
+
 /* Asides */
 
 .blog .format-aside .entry-title,

@@ -331,6 +331,9 @@ big {
 .bold-text {
   font-weight: bold; }
 
+.site-header h1 p {
+  color: #248A83; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -481,7 +484,8 @@ a {
 /* Menus */
 #masthead {
   position: fixed;
-  background: rgba 255, 255, 255, 0.25%; }
+  background: rgba 255, 255, 255, 0.2;
+  z-index: 99999; }
 
 .site-header {
   display: -ms-flexbox;
@@ -692,6 +696,15 @@ a {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
+
+.home-posts-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap; }
+  .home-posts-wrapper ul {
+    list-style-type: none;
+    text-align: center; }
 
 /* Asides */
 .blog .format-aside .entry-title,
