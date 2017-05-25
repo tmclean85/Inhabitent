@@ -14,3 +14,4 @@ themes/*
 !themes/inhabitent-theme/
 # Ignore packages #
 themes/inhabitent-theme/node_modules/
+
