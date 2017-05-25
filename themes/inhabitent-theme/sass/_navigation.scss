@@ -29,12 +29,14 @@ a {
 #masthead {
 //	position: absolute;
 	position: fixed;
-	background: rgba (255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.7);
 	z-index: 99999;
+  a,i {
+			color: #248A83;
+	}
 }
 
 .site-header {
-
 	display: flex;
 	width: 100%;
 	justify-content: center;
@@ -140,7 +142,7 @@ a {
 
 	.site-main & {
 		margin: 0 0 $base__space-unit;
-		overflow: hidden;
+		
 	}
 
 	.nav-previous {

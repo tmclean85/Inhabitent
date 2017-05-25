@@ -33,12 +33,16 @@
 	margin: 0 0 $base__space-unit;
 }
 
+.site-main {
+	max-width: 1120px;
+}
+
 .hero-main {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/wordpress/wp-content/themes/inhabitent-theme/images/home-hero.jpg");
   background-repeat: no-repeat, repeat-x;
   background-size: contain, cover;
   background-position: center, top 5rem right 0 bottom 0 left 0;
-	height: 45rem;
+	height: 40rem;
 	display: flex;
 	flex-direction: column;
 }
@@ -50,11 +54,11 @@
 }
 
 .hero-about {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/wordpress/wp-content/themes/inhabitent-theme/images/about-hero.jpg");
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/wordpress/wp-content/themes/inhabitent-theme/images/about-hero-compressor.jpg");
   background-repeat: no-repeat, repeat-x;
   background-size: contain, cover;
-  background-position: center, top 5rem right 0 bottom 0 left 0;
-	height: 45rem;
+  background-position: center, center;
+	height: 40rem;
 	display: flex;
 	flex-direction: column;		
 }
@@ -62,10 +66,82 @@
 .home-posts-wrapper {
    display: flex;
 	 flex-flow: row nowrap;
+	 justify-content: space-between;
    ul {
 		 list-style-type: none;
 		 text-align: center;
+		 justify-content: center;
 	 }
+}
+
+.journal-wrapper-main {
+	display: flex;
+	flex-flow: column nowrap;
+
+	h1 {
+		text-align: center;
+		font-weight: 200;
+		font-size: 2.5rem;
+	}
+}
+
+.single-home-post {
+	width: 33%;
+	height: max;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.product-info-wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.product-type-box {
+  width: 17rem;
+	height: 15rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	border-top: 5px solid #e1e1e1;
+	border-right: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	border-left: 1px solid #e1e1e1;
+	text-align: center;
+  
+	img {
+		height: 4rem;
+		width: 4rem;
+	}
+
+	a {
+		text-decoration: none;
+		font-family: 'Novecento Web';
+		color: #FFF;
+	}
+
+	button {
+		background-color: #248A83;
+	}
+}
+
+.content-area {
+	display: flex;
+	justify-content: center;
+}
+
+#main {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.blog-post-box {
+  display: flex;
+	width: 900px;
 }
 
 /* Asides */

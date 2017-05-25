@@ -29,6 +29,14 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 // add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 
 
+function inhabitent_products_modify_query( $query ) {
+    if ( is_post_type_archive('product') || $query->is_tax('product_type') && $query->is_main_query() && !is_admin()) {
+        $query->set( 'posts_per_page', 16);
+        $query->set( 'order', 'ASC');
+				$query->set( 'orderby', 'title' );
+	  }    
+}
+add_action( 'pre_get_posts', 'inhabitent_products_modify_query' ); 
 
 
 
