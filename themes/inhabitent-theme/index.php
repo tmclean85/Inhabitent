@@ -16,12 +16,26 @@ get_header(); ?>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 			<?php endif; ?>
-      <div class="blog-post-box">
 
+      
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-			  <?php get_template_part( 'template-parts/content' ); ?>
 
+		<div class="blog-post-main">
+			<?php the_post_thumbnail('large') ?>
+			<div class="blog-post-title">
+			<h1><?php the_title(); ?></h1>
+			</div>
+			<div class="blog-post-footer">
+			<p><?php the_date();?> / <?php comments_number( '0 COMMENTS', '1 COMMENT', '% COMMENTS' ); ?> / BY <?php the_author(); ?></p>
+      </div>
+			</div>
+			<div class="blog-excerpt-box">
+				<p><?php the_excerpt(); ?></p>
+			</div>
+			<div class="button-wrapper">	
+			<?php echo '<button class="blog-story-button"><a href="'.get_permalink().'">READ MORE</a></button>' ?>
+      </div>
 			  <?php endwhile; ?>
 
 			  <?php the_posts_navigation(); ?>
@@ -30,10 +44,12 @@ get_header(); ?>
 			  <?php get_template_part( 'template-parts/content', 'none' ); ?>
      
 		    <?php endif; ?>
-      </div>
+
+
 
 		</main><!-- #main -->
+		<?php get_sidebar(); ?>
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

@@ -38,5 +38,16 @@ function inhabitent_products_modify_query( $query ) {
 }
 add_action( 'pre_get_posts', 'inhabitent_products_modify_query' ); 
 
+    // function product_archive_title($shop_title) {
+    //   if(is_post_type_archive('product')) {
+    //     $shop_title = 'Shop Stuff';
+    // }
+    // return $shop_title;
+    // }
+    // add_filter('get_the_archive_title', 'product_archive_title');
+    // the_archive_title( '<h1 class="page-title">', '</h1>' );
+    // the_archive_description( '<div class="taxonomy-description">', '</div>' );
+
+
 
 

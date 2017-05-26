@@ -30,7 +30,35 @@
 		<?php endif; ?>
 	
 <!-- store categories -->
-<div class="product-info-wrapper">
+<div class="product-type-box">
+<ul class="shop-categories">
+				<?php 
+					$categories = array(
+						'taxonomy' 		=> 'product-type', 
+						'hide_empty' 	=> true,
+						);
+					$terms = get_terms( $categories );
+				?>
+				
+				<?php foreach ( $terms as $term ) :  ?>
+					<li class="shop-category-box"> 
+						
+						<img src="<?php echo get_template_directory_uri(). "/images/product-type-icons/" .$term->slug. ".svg" ?> " alt=" ">
+						<p><?php echo $term->description?></p>
+
+						<a href="<?php echo get_term_link( $term ); ?>"> 
+						
+							<button class="button-shop">
+								<?php echo $term->name . ' Stuff'?>
+							</button>
+						</a>
+
+					</li>
+</div>					
+				<?php endforeach; ?>
+			</ul>
+		</section> <!-- shop cards -->
+<!--<div class="product-info-wrapper">
 <div class="product-type-box">
 	<img src="/wordpress/wp-content/themes/inhabitent-theme/images/do.svg" alt="small-map-picture">
 	<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors</p>
@@ -51,7 +79,7 @@
 	<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
 	<button><a href="http://localhost:3000/wordpress/product-type/wear/">WEAR STUFF</a></button>
 </div>
-</div>	
+</div>	-->
 
 
 

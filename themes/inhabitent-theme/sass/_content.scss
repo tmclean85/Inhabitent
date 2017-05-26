@@ -35,6 +35,9 @@
 
 .site-main {
 	max-width: 1120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .hero-main {
@@ -131,7 +134,10 @@
 
 .content-area {
 	display: flex;
+	flex-flow: row nowrap;
 	justify-content: center;
+	align-items: center;
+	border-right: 1px solid lightgrey;
 }
 
 #main {
@@ -139,9 +145,82 @@
 	flex-flow: column nowrap;
 }
 
-.blog-post-box {
-  display: flex;
-	width: 900px;
+
+.about-hero-wrapper {
+	position: relative;
+
+	h1 {
+		color: #FFF;
+		position: absolute;
+		font-size: 3rem;
+		bottom: 40%;
+		left: 43%;
+	}
+}
+
+.product-archive-main-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.archive-product-minibox {
+	width: 22%;
+	height: 15rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.blog-post-main {
+	display: flex;
+	flex-flow: column nowrap;
+	position: relative;
+	width: max;
+	padding-top: 3rem;
+}
+
+.blog-post-title {
+	color: #FFF;
+	font-size: 1rem;
+	position: absolute;
+	top: 15%;
+	height: auto;
+	background-color: #248A83;
+	max-width: 80%;
+}
+
+.blog-post-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Novecento Web';
+	color: #FFF;
+	position: absolute;
+	height: 1.5rem;
+	background-color: #248A83;
+	bottom: 0;
+	right: 0;
+
+	p {
+		padding: 0;
+	}
+}
+
+.blog-excerpt-box {
+	width: 57%;
+}
+
+.button-wrapper {
+  width: 57%;
+	padding-bottom: 1rem;
+  button {
+	font-family: 'Novecento Web';
+	background: #FFF;
+	border: 1px solid #000;
+	}
+	a {
+	color: #000;
+  text-decoration: none;
+	}
 }
 
 /* Asides */
