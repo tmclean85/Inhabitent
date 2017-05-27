@@ -34,7 +34,8 @@
   background-image: url("/wordpress/wp-content/themes/inhabitent-theme/images/dark-wood.png");
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   height: 20rem;
   padding-top: 3rem;
   h3 {
@@ -50,7 +51,7 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  width: 100%;
+  width: 1120px;
   height: 10rem;
 }
 

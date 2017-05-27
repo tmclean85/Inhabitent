@@ -363,9 +363,6 @@ hr {
   height: 1px;
   margin-bottom: 1.5rem; }
 
-ul, ol {
-  margin: 0 0 1.5rem 3rem; }
-
 ul {
   list-style: disc; }
 
@@ -459,7 +456,8 @@ a {
 #masthead {
   position: fixed;
   background: rgba(255, 255, 255, 0.7);
-  z-index: 99999; }
+  z-index: 99999;
+  border-bottom: 1px solid lightgrey; }
   #masthead a, #masthead i {
     color: #248A83; }
 
@@ -696,7 +694,9 @@ a {
     list-style-type: none;
     text-align: center;
     -ms-flex-pack: center;
-        justify-content: center; }
+        justify-content: center;
+    padding: 0;
+    margin: 0; }
 
 .journal-wrapper-main {
   display: -ms-flexbox;
@@ -718,6 +718,17 @@ a {
   -ms-flex-align: center;
       align-items: center; }
 
+.product-types {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%; }
+
 .product-info-wrapper {
   display: -ms-flexbox;
   display: flex;
@@ -729,9 +740,10 @@ a {
       align-items: center; }
 
 .product-type-box {
-  width: 17rem;
-  height: 15rem;
   display: -ms-flexbox;
+  display: flex;
+  width: 17rem;
+  height: 17rem;
   display: flex;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
@@ -748,11 +760,22 @@ a {
     height: 4rem;
     width: 4rem; }
   .product-type-box a {
-    text-decoration: none;
-    font-family: 'Novecento Web';
-    color: #FFF; }
+    text-decoration: none; }
   .product-type-box button {
-    background-color: #248A83; }
+    background-color: #248A83;
+    color: #FFF;
+    font-family: 'Novecento Web';
+    border: none;
+    box-shadow: none;
+    text-transform: uppercase; }
+  .product-type-box ul {
+    height: auto;
+    width: auto; }
+
+.shop-categories {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
 
 .content-area {
   display: -ms-flexbox;
@@ -841,9 +864,83 @@ a {
     color: #000;
     text-decoration: none; }
 
+.adventure-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  width: 100%;
+  height: 35rem;
+  margin-bottom: 5rem; }
+  .adventure-wrapper h1 {
+    color: #FFF;
+    font-family: 'Merriweather Web';
+    font-weight: normal;
+    text-transform: none; }
+
+.test {
+  display: -ms-flexbox;
+  display: flex;
+  height: 47%;
+  width: 46.5%;
+  margin-left: 2.2rem;
+  margin-top: 2.1rem; }
+
+.adventure-box-large {
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/wordpress/wp-content/themes/inhabitent-theme/images/adventure-photos/canoe-girl.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 1.75rem; }
+
+.adventure-box-long {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/wordpress/wp-content/themes/inhabitent-theme/images/adventure-photos/beach-bonfire.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 47%;
+  width: 46.5%;
+  margin-left: 2.2rem;
+  font-size: 1.3rem; }
+
+.adventure-box-small {
+  font-size: 0.75rem;
+  width: 50%; }
+
+.adventure-sub-box {
+  width: 90%;
+  padding-left: 0.75rem; }
+  .adventure-sub-box button {
+    background: transparent;
+    border: 1px solid #FFF;
+    box-shadow: none;
+    color: #FFF;
+    font-family: 'Novecento Web'; }
+  .adventure-sub-box button:hover {
+    background: #248A83;
+    border: 1px solid #248A83; }
+
+#first-box {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/wordpress/wp-content/themes/inhabitent-theme/images/adventure-photos/mountain-hikers.jpg");
+  margin-right: 2.3rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right; }
+
+#second-box {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/wordpress/wp-content/themes/inhabitent-theme/images/adventure-photos/night-sky.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right; }
+
 /* Asides */
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
+  display: none; }
+
+.entry-title {
   display: none; }
 
 /* Comments */
@@ -951,8 +1048,10 @@ object {
   display: flex;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   height: 20rem;
   padding-top: 3rem; }
   .footer-wrapper h3 {
@@ -967,7 +1066,7 @@ object {
       flex-flow: row nowrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 100%;
+  width: 1120px;
   height: 10rem; }
 
 .footer-box {

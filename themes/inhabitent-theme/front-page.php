@@ -4,8 +4,6 @@
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-    
-
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -30,8 +28,9 @@
 		<?php endif; ?>
 	
 <!-- store categories -->
-<div class="product-type-box">
-<ul class="shop-categories">
+  <div class="journal-wrapper-main">
+    <h1>SHOP STUFF</h1>
+	</div>
 				<?php 
 					$categories = array(
 						'taxonomy' 		=> 'product-type', 
@@ -39,48 +38,25 @@
 						);
 					$terms = get_terms( $categories );
 				?>
-				
+	<section class="product-types">
+
 				<?php foreach ( $terms as $term ) :  ?>
-					<li class="shop-category-box"> 
-						
-						<img src="<?php echo get_template_directory_uri(). "/images/product-type-icons/" .$term->slug. ".svg" ?> " alt=" ">
-						<p><?php echo $term->description?></p>
-
-						<a href="<?php echo get_term_link( $term ); ?>"> 
-						
-							<button class="button-shop">
-								<?php echo $term->name . ' Stuff'?>
-							</button>
-						</a>
-
-					</li>
-</div>					
+  
+    <div class="product-type-box">
+      <ul class="shop-categories">				
+				<li class="shop-category-box"> 						
+					<img src="<?php echo get_template_directory_uri(). "/images/product-type-icons/" .$term->slug. ".svg" ?> " alt=" ">
+					<p><?php echo $term->description?></p>
+					<a href="<?php echo get_term_link( $term ); ?>"> 						
+						<button class="button-shop">
+							<?php echo $term->name . ' Stuff'?>
+						</button>
+					</a>
+				</li>
+     </div><!--.product-type-box-->			
 				<?php endforeach; ?>
 			</ul>
-		</section> <!-- shop cards -->
-<!--<div class="product-info-wrapper">
-<div class="product-type-box">
-	<img src="/wordpress/wp-content/themes/inhabitent-theme/images/do.svg" alt="small-map-picture">
-	<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors</p>
-	<button><a href="http://localhost:3000/wordpress/product-type/do/">DO STUFF</a></button>
-</div>	
-<div class="product-type-box">
-	<img src="/wordpress/wp-content/themes/inhabitent-theme/images/eat.svg" alt="small-coffee-mug-picture">
-	<p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
-	<button><a href="http://localhost:3000/wordpress/product-type/eat/">EAT STUFF</a></button>
-</div>
-<div class="product-type-box">
-	<img src="/wordpress/wp-content/themes/inhabitent-theme/images/sleep.svg" alt="small-sleeping-bag-picture">
-	<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
-	<button><a href="http://localhost:3000/wordpress/product-type/sleep/">SLEEP STUFF</a></button>
-</div>	
-<div class="product-type-box">
-	<img src="/wordpress/wp-content/themes/inhabitent-theme/images/wear.svg" alt="small-toque-picture">
-	<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
-	<button><a href="http://localhost:3000/wordpress/product-type/wear/">WEAR STUFF</a></button>
-</div>
-</div>	-->
-
+		</section> <!--.product-types -->
 
 
 <!-- get posts -->
@@ -120,6 +96,42 @@ $posts = new WP_Query( $postArgs ); ?>
 <?php endif; ?>
 </div> 
 </div>
+<div class="journal-wrapper-main">
+  <h1>LATEST ADVENTURES</h1>
+</div>	
+<section class="adventure-wrapper">
+  <div class="adventure-box-large">
+		<div class="adventure-sub-box">
+			<h1>Getting Back to Nature in a Canoe</h1>
+			<button class="adventure-button">READ MORE</button>
+		</div>
+	</div>
+  <div class="adventure-box-long">
+		<div class="adventure-sub-box">
+			<h1>A Night with Friends at the Beach</h1>
+			<button class="adventure-button">READ MORE</button>
+		</div>		
+	</div>
+	<div class="test">
+	<div class="adventure-box-small" id="first-box">
+		<div class="adventure-sub-box">
+			<h1>Taking in the View at Big Mountain</h1>
+			<button class="adventure-button">READ MORE</button>
+		</div>				
+	</div>
+	<div class="adventure-box-small" id="second-box">
+		<div class="adventure-sub-box">
+			<h1>Star Gazing at the Night Sky</h1>
+			<button class="adventure-button">READ MORE</button>
+		</div>			
+	</div>
+	</div>	
+</div>
+		<button class="adventures-button">MORE ADVENTURES</button>	
+	
+
+</section>	
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
