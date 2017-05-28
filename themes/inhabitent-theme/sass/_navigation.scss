@@ -26,14 +26,30 @@ a {
 
 /* Menus */
 
+.header-control-wrapper {
+	align-items: center;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	width: 1120px;
+}
+
+.menu-main-menu-container {
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	display: flex;
+}
+
 #masthead {
-//	position: absolute;
 	position: fixed;
 	background: rgba(255, 255, 255, 0.7);
 	z-index: 99999;
 	border-bottom: 1px solid lightgrey;
   a,i {
 		color: #248A83;
+		padding-right: 0;
+		margin-right: 0;
 	}
 	a:hover {
 	  color: #634E6B;
@@ -67,7 +83,6 @@ a {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: flex-end;
-	width: 75%;
 
 	ul {
 		display: none;

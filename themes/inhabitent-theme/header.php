@@ -20,6 +20,7 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
+			<div class="header-control-wrapper">
 				<div class="site-branding">
 					<a href="http://localhost:3000/wordpress/"><img class="nav-logo" src="/wordpress/wp-content/themes/inhabitent-theme/images/inhabitent-logo-tent.svg" alt="small-inhabitent-logo"></a>
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -36,6 +37,7 @@
 						<i class="fa fa-search" aria-hidden="true"></i>
 					</a>
 				</nav><!-- #site-navigation -->
+				</div><!--header control wrapper-->
 				</header><!-- #masthead -->
 
 <!--Code for search here-->
