@@ -2,15 +2,17 @@
 # Widgets
 --------------------------------------------------------------*/
 
-.widget {
-	margin: 0 0 $base__space-unit;
-
 .widget-area {
-	display: flex;
+	display: block;
 	position: absolute;
 	top: 0;
 	right: 0;
+	width: 27%;
 }	
+
+.widget {
+	margin: 0 0 $base__space-unit;
+
 
 .widget-title {
   color: #2f1339;
@@ -39,10 +41,6 @@ aside {
 	ul {
 		padding: 0;
 	}
-}
-
-.sidebar-wrapper {
-	display: flex;
 }
 
 	/* Make sure select elements fit in widgets. */

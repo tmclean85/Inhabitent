@@ -80,11 +80,16 @@
   }
 
 }
+ // Product taxonomy page
 
-//SIDEBAR
-
-.sidebar-wrapper {
+.taxonomy-product-wrapper {
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
 
-  padding-top: 10rem;
+.taxonomy-description {
+  p {
+    padding: 1.5rem;
+  }
 }
