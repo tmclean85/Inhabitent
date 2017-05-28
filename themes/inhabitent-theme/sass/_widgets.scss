@@ -7,8 +7,43 @@
 
 .widget-area {
 	display: flex;
-	border-left: 1px solid lightgrey;
+	position: absolute;
+	top: 0;
+	right: 0;
 }	
+
+.widget-title {
+  color: #2f1339;
+}
+
+.biz-day {
+	font-weight: bold;
+}
+
+aside {
+	ul {
+	list-style-type: none;
+
+	}
+  a {
+	text-decoration: none;
+	font-family: 'Merriweather Web';
+  }
+}
+
+#secondary {
+	text-align: left;
+}
+
+#archives-2 {
+	ul {
+		padding: 0;
+	}
+}
+
+.sidebar-wrapper {
+	display: flex;
+}
 
 	/* Make sure select elements fit in widgets. */
 	select {
@@ -20,3 +55,4 @@
 .widget_search .search-submit {
 	display: none;
 }
+

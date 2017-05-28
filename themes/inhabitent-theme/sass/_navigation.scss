@@ -33,8 +33,22 @@ a {
 	z-index: 99999;
 	border-bottom: 1px solid lightgrey;
   a,i {
-			color: #248A83;
+		color: #248A83;
 	}
+	a:hover {
+	  color: #634E6B;
+	}
+	input {
+		font-family: 'Novecento Web'
+	}
+}
+
+.search-field-hidden {
+	display: none;
+}
+
+.search-field-shown {
+	display: inline;
 }
 
 .site-header {
@@ -89,8 +103,7 @@ a {
 			.focus > a {
 			}
 
-			a:hover,
-			a.focus {
+			a:hover {
 			}
 		}
 

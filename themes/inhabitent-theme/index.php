@@ -7,11 +7,9 @@
 
 get_header(); ?>
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
+	  <main id="main" class="site-main" role="main">
 		<?php if ( have_posts() ) : ?>
-
-			<?php if ( is_home() && ! is_front_page() ) : ?>
+		<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
@@ -24,17 +22,17 @@ get_header(); ?>
 		<div class="blog-post-main">
 			<?php the_post_thumbnail('large') ?>
 			<div class="blog-post-title">
-			<h1><?php the_title(); ?></h1>
+			  <h1><?php the_title(); ?></h1>
 			</div>
 			<div class="blog-post-footer">
-			<p><?php the_date();?> / <?php comments_number( '0 COMMENTS', '1 COMMENT', '% COMMENTS' ); ?> / BY <?php the_author(); ?></p>
+			  <p><?php the_date();?> / <?php comments_number( '0 COMMENTS', '1 COMMENT', '% COMMENTS' ); ?> / BY <?php the_author(); ?></p>
       </div>
 			</div>
 			<div class="blog-excerpt-box">
 				<p><?php the_excerpt(); ?></p>
 			</div>
 			<div class="button-wrapper">	
-			<?php echo '<button class="blog-story-button"><a href="'.get_permalink().'">READ MORE</a></button>' ?>
+			<?php echo '<button class="blog-story-button"><a href="'.get_permalink().'">READ MORE →</a></button>' ?>
       </div>
 			  <?php endwhile; ?>
 
@@ -48,7 +46,9 @@ get_header(); ?>
 
 
 		</main><!-- #main -->
-		<?php get_sidebar(); ?>
+		<div class="sidebar-wrapper">
+	  	<?php get_sidebar(); ?>
+		</div>
 	</div><!-- #primary -->
 
 

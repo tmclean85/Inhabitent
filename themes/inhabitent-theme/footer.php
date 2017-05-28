@@ -22,14 +22,15 @@
 					<p><span class="bold-text">Saturday:</span> 10am to 2pm</p>
 					<p><span class="bold-text">Sunday:</span> Closed</p>
 				</div>	
-				<div class="footer-box-long">
+				<div class="footer-box" id="footer-box-long">
           <img src="/wordpress/wp-content/themes/inhabitent-theme/images/inhabitent-logo-text.svg">
 				</div>	
 			</footer><!-- #colophon -->
-			<div class="site-info">
-				<p>COPYRIGHT 2016 INHABITENT</p>
-			</div><!-- .site-info -->				
+		
 		</div>	
+					<div class="site-info">
+				<p>COPYRIGHT 2017 INHABITENT</p>
+			</div><!-- .site-info -->		
 	</div><!-- #page -->
 
 		<?php wp_footer(); ?>

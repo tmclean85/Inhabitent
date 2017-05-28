@@ -13,6 +13,11 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
+.date-item {
+	font-family: 'Merriweather Web';
+	font-size: 0.75rem;
+}
+
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,7 +34,7 @@ aside h2 {
 /* Copy */
 
 p {
-	margin-bottom: $base__space-unit;
+
 }
 
 dfn, cite, em, i {

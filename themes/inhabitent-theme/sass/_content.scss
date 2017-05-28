@@ -4,7 +4,6 @@
 
 /* Posts and pages */
 
-
 .sticky {
 	display: block;
 }
@@ -33,11 +32,14 @@
 	margin: 0 0 $base__space-unit;
 }
 
+
 .site-main {
-	max-width: 1120px;
+	width: 1120px;
 	display: flex;
 	justify-content: center;
+	flex-flow: row nowrap;
 	align-items: center;
+	border-right: 1px solid lightgrey;
 }
 
 .hero-main {
@@ -82,6 +84,7 @@
 .journal-wrapper-main {
 	display: flex;
 	flex-flow: column nowrap;
+	justify-content: space-around;
 
 	h1 {
 		text-align: center;
@@ -96,24 +99,70 @@
 	justify-content: center;
 	align-content: center;
 	align-items: center;
+	img {
+		height: 15rem;
+		width: 100%;
+		object-fit: cover;
+		padding: 0;
+		margin: 0;
+	}
 }
+
+.home-post-footer {
+	display: flex;
+	border-top: 5px solid lightgrey;
+	border-right: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+	border-left: 1px solid lightgrey;
+	flex-flow: column nowrap;
+	height: auto;
+	justify-content: space-around;
+	padding: 1rem;
+	text-align: left;
+	h2 {
+		color: #248A83;
+	}
+	button {
+	font-family: 'Novecento Web';
+	font-weight: light;
+	background: #FFF;
+	border: 1px solid #000;
+	}
+	button:hover {
+		color: #FFF;
+		background: #248A83;
+		border: 1px solid #248A83;
+		a {
+      color: #FFF;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: #000;
+	}
+}
+
+.journal-post-title {
+	color: #248A83;
+	a:hover {
+		color: #2f1339;
+	}
+}
+
 
 .product-types {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
-	
-
+	width: 100%;	
 }
 
 .product-info-wrapper {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	align-items: center;
-	
+	align-items: center;	
 }
 
 .product-type-box {
@@ -130,7 +179,6 @@
 	border-left: 1px solid #e1e1e1;
 	text-align: center;
 
-  
 	img {
 		height: 4rem;
 		width: 4rem;
@@ -157,7 +205,7 @@
 
 .shop-categories {
 	list-style-type: none;
-		padding: 0;
+	padding: 0;
 	margin: 0;
 }
 
@@ -167,6 +215,7 @@
 	justify-content: center;
 	align-items: center;
 	border-right: 1px solid lightgrey;
+	position: relative;
 }
 
 #main {
@@ -174,6 +223,9 @@
 	flex-flow: column nowrap;
 }
 
+.page-title {
+	text-align: center;
+}
 
 .about-hero-wrapper {
 	position: relative;
@@ -187,16 +239,70 @@
 	}
 }
 
+.page-header {
+	padding-top: 7rem;
+	font-size: 1.25rem;
+}
+
+.product-type-nav {
+	display: flex;
+	list-style-type: none;
+	text-transform: uppercase;
+	a {
+		padding-left: 2rem;
+		padding-right: 2rem;
+		color: #248A83;
+		text-decoration: none;
+		font-family: 'Novecento Web';
+		font-size: 1.25rem;
+	}
+}
+
 .product-archive-main-wrapper {
 	display: flex;
 	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px dashed lightgray;
+	padding-top: 3rem;
 }
 
 .archive-product-minibox {
-	width: 22%;
-	height: 15rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	display: flex;
+	flex-flow: column nowrap;
+	width: 20%;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	height: 20rem;
+	img{
+		height: 14rem;
+		object-fit: cover;
+	}
+}
+
+.dots {
+  flex-grow:2;
+  background-image: linear-gradient(to right, grey 33%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 4px 2px;
+  background-repeat: repeat-x;
+	height: 12px;
+}
+
+.archive-product-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 3rem;
+	border-top: 5px solid lightgrey;
+	border-right: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+	border-left: 1px solid lightgrey;
+	padding-bottom: 0.25rem;
+}
+
+.button-shop:hover {
+	background-color: #19625D
 }
 
 .blog-post-main {
@@ -204,14 +310,14 @@
 	flex-flow: column nowrap;
 	position: relative;
 	width: max;
-	padding-top: 3rem;
+	padding-top: 8rem;
 }
 
 .blog-post-title {
 	color: #FFF;
 	font-size: 1rem;
 	position: absolute;
-	top: 15%;
+	top: 30%;
 	height: auto;
 	background-color: #248A83;
 	max-width: 80%;
@@ -228,7 +334,6 @@
 	background-color: #248A83;
 	bottom: 0;
 	right: 0;
-
 	p {
 		padding: 0;
 	}
@@ -249,6 +354,13 @@
 	a {
 	color: #000;
   text-decoration: none;
+	}
+	a:hover {
+		color: #FFF;
+	}
+	button:hover {
+		background-color: #248A83;
+		border: 1px solid #248A83;
 	}
 }
 
@@ -273,7 +385,6 @@
 	width: 46.5%;
 	margin-left: 2.2rem;
 	margin-top: 2.1rem;
-
 }
 
 .adventure-box-large {
@@ -298,7 +409,6 @@
 }
 
 .adventure-box-small {
-
 	font-size: 0.75rem;
 	width: 50%;	
 }

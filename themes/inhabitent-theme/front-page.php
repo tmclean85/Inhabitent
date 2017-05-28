@@ -45,7 +45,7 @@
     <div class="product-type-box">
       <ul class="shop-categories">				
 				<li class="shop-category-box"> 						
-					<img src="<?php echo get_template_directory_uri(). "/images/product-type-icons/" .$term->slug. ".svg" ?> " alt=" ">
+					<img src="<?php echo get_template_directory_uri(). "/images/product-type-icons/" .$term->slug. ".svg" ?> " alt="product-type">
 					<p><?php echo $term->description?></p>
 					<a href="<?php echo get_term_link( $term ); ?>"> 						
 						<button class="button-shop">
@@ -77,16 +77,18 @@ $posts = new WP_Query( $postArgs ); ?>
 <div class="journal-wrapper-main">
 	<h1>INHABITENT JOURNAL</h1>
 	<div class="home-posts-wrapper">	
-		<?php $products = new WP_Query( $postArgs ); /* $args set above*/ ?>
+		<?php $products = new WP_Query( $postArgs ); ?>
 <?php if ( $posts->have_posts() ) : ?>
    <?php while ( $posts->have_posts() ) : $posts->the_post(); ?>	
 	 <div class="single-home-post"> 
-	 <ul class="home-posts">
-			<li><?php the_post_thumbnail( 'medium' ); ?></a></li>
-			<li><?php the_time('F jS, Y'); ?></li>
-		  </li><h2><?php the_title(); ?></h2></li>
-			<li><button>READ ENTRY</button></li>
-   </ul>  	
+	   <ul class="home-posts">
+		   <li><?php the_post_thumbnail( 'medium' ); ?></a></li>
+			 <div class="home-post-footer">
+			   <li class="date-item"><?php the_time('F jS, Y'); ?> / <?php comments_number( '0 Comments', '1 0 Comment', '% 0 Comments' ); ?></li>
+		     <li class="journal-post-title"><a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a></li>
+		     <li><button><a href="<?php the_permalink(); ?>">READ ENTRY</a></button></li>
+			 </div>	 
+     </ul>  	
 	 </div> 
    <?php endwhile; ?>
    <?php the_posts_navigation(); ?>
@@ -126,8 +128,9 @@ $posts = new WP_Query( $postArgs ); ?>
 		</div>			
 	</div>
 	</div>	
+			<button class="adventures-button">MORE ADVENTURES</button>	
+
 </div>
-		<button class="adventures-button">MORE ADVENTURES</button>	
 	
 
 </section>	

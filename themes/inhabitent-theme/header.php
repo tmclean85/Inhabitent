@@ -29,7 +29,12 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<a><i class="fa fa-search" aria-hidden="true"></i></a>
+					<a id="search-icon" href="#">
+					  <form class="search-field-hidden" id="search-field-hidden">
+							<input id="search-field-hidden" class="search-field-hidden" type="text" placeholder="TYPE AND HIT ENTER">
+						</form>	
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</a>
 				</nav><!-- #site-navigation -->
 				</header><!-- #masthead -->
 
