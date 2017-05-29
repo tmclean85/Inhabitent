@@ -28,7 +28,12 @@ get_header(); ?>
 		   <p>POSTED IN →<span class="blog-meta-colour"><?php the_category(); ?></span></p>
 		   <p>TAGGED →<?php the_tags(); ?></p> 			 
 		 </div>	 	
-     </div>
+		  <div class="main-journal-button-wrapper">
+			  <button class="post-social-media"><i class="fa fa-facebook" aria-hidden="true"></i>LIKE</button>
+			  <button class="post-social-media"><i class="fa fa-twitter" aria-hidden="true"></i>TWEET</button>
+			  <button class="post-social-media"><i class="fa fa-pinterest" aria-hidden="true"></i>PIN</button>
+		  </div>	
+ 
 		 
 
 			<?php
@@ -37,6 +42,7 @@ get_header(); ?>
 					comments_template();
 				endif;
 			?>
+			 </div>
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->

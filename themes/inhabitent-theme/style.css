@@ -335,6 +335,29 @@ big {
 .site-header h1 p {
   color: #248A83; }
 
+.comment-content {
+  font-family: 'Merriweather Web'; }
+
+.comment-metadata {
+  color: #808080; }
+  .comment-metadata a {
+    text-decoration: none;
+    color: #248A83; }
+
+.comment-body {
+  border-bottom: 1px solid lightgrey;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.reply {
+  padding-bottom: 3rem; }
+  .reply a {
+    text-decoration: none;
+    color: #248A83; }
+
+.comment-author {
+  font-weight: bold; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -436,6 +459,9 @@ input[type="search"] {
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+.comments-area {
+  width: 650px; }
 
 /*--------------------------------------------------------------
 # Navigation
