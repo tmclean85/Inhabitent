@@ -56,14 +56,6 @@ a {
 	}
 }
 
-.search-field-hidden {
-	display: none;
-}
-
-.search-field-shown {
-	display: inline;
-}
-
 .site-header {
 	display: flex;
 	width: 100%;
@@ -150,6 +142,14 @@ a {
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 	}
+}
+
+#search-form {
+	display: none;
+}
+
+.search-form-long {
+	display: inline;
 }
 
 /* Small menu. */

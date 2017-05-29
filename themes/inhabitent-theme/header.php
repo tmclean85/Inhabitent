@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
 
 	<?php wp_head(); ?>
 	</head>
@@ -30,11 +31,11 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<a id="search-icon" href="#">
-					  <form class="search-field-hidden" id="search-field-hidden">
-							<input id="search-field-hidden" class="search-field-hidden" type="text" placeholder="TYPE AND HIT ENTER">
+					  <form id="search-form" class="search-form" >
+							<input class="search-field" type="text" placeholder="TYPE AND HIT ENTER">
 						</form>	
-						<i class="fa fa-search" aria-hidden="true"></i>
+					<a id="search-icon" href="#">
+						<i id="search-icon" class="fa fa-search" aria-hidden="true"></i>
 					</a>
 				</nav><!-- #site-navigation -->
 				</div><!--header control wrapper-->

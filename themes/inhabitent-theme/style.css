@@ -512,12 +512,6 @@ a {
   #masthead input {
     font-family: 'Novecento Web'; }
 
-.search-field-hidden {
-  display: none; }
-
-.search-field-shown {
-  display: inline; }
-
 .site-header {
   display: -ms-flexbox;
   display: flex;
@@ -574,6 +568,12 @@ a {
     padding-right: 1rem;
     text-transform: uppercase;
     color: #FFF; }
+
+#search-form {
+  display: none; }
+
+.search-form-long {
+  display: inline; }
 
 /* Small menu. */
 .menu-toggle,
