@@ -900,6 +900,12 @@ a {
     height: auto;
     width: auto; }
 
+.product-type-box:hover {
+  border-top: 5px solid #d99054;
+  border-right: 1px solid #d99054;
+  border-bottom: 1px solid #d99054;
+  border-left: 1px solid #d99054; }
+
 .shop-categories {
   list-style-type: none;
   padding: 0;
@@ -1382,3 +1388,6 @@ object {
     padding-top: 5rem; }
   .entry-content h1, .entry-content h2 {
     color: #2f1339; }
+
+.about-box {
+  width: 650px; }

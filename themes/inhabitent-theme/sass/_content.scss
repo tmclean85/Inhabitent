@@ -33,6 +33,7 @@
 }
 
 
+
 .site-main {
 	width: 1120px;
 	display: flex;
@@ -200,6 +201,13 @@
 		height: auto;
 		width: auto;
 	}
+}
+
+.product-type-box:hover {
+	border-top: 5px solid #d99054;
+	border-right: 1px solid #d99054;
+	border-bottom: 1px solid #d99054;
+	border-left: 1px solid #d99054;	
 }
 
 .shop-categories {
