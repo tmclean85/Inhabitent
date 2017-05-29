@@ -23,7 +23,7 @@ get_header(); ?>
 		<div class="blog-post-main">
 			<?php the_post_thumbnail('large') ?>
 			<div class="blog-post-title">
-			  <h1><?php the_title(); ?></h1>
+			  <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
 			</div>
 			<div class="blog-post-footer">
 			  <p><?php the_date();?> / <?php comments_number( '0 COMMENTS', '1 COMMENT', '% COMMENTS' ); ?> / BY <?php the_author(); ?></p>

@@ -371,6 +371,16 @@
 	height: auto;
 	background-color: #248A83;
 	max-width: 80%;
+	a {
+	  text-decoration: none;
+		color: #FFF;
+		:hover {
+			color: #f0e4d1;
+		}
+	}
+	h1 {
+		padding: 0 1rem 0 1rem;
+	}
 }
 
 .blog-post-footer {
