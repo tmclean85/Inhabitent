@@ -119,16 +119,11 @@ $posts = new WP_Query( $postArgs ); ?>
 			<h1>Star Gazing at the Night Sky</h1>
 			<button class="adventure-button">READ MORE</button>
 		</div>			
-	</div>
+	 </div>
 	</div>	
-	<button class="adventures-button">MORE ADVENTURES</button>	
 </div>
-	
-
-</section>	
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-
+</section><!--adventure-wrapper-->
+	<button class="adventures-button">MORE ADVENTURES</button>		
+</main><!-- #main -->
+</div><!-- #primary -->
 <?php get_footer(); ?>

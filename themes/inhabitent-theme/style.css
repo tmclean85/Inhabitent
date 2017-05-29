@@ -1177,6 +1177,19 @@ a {
   background-repeat: no-repeat;
   background-position: bottom right; }
 
+.adventures-button {
+  font-family: 'Novecento Web';
+  font-size: 1.25rem;
+  background: #248A83;
+  border: 1px solid #248A83;
+  color: #FFF;
+  position: absolute;
+  top: 2350px;
+  left: 160px; }
+
+.adventures-button:hover {
+  background: #19625D; }
+
 .single-blog-content-box {
   width: 650px;
   font-size: 1.1rem; }
