@@ -415,12 +415,12 @@
 	color: #000;
   text-decoration: none;
 	}
-	a:hover {
-		color: #FFF;
-	}
 	button:hover {
 		background-color: #248A83;
 		border: 1px solid #248A83;
+		a {
+			color: #FFF;
+		}
 	}
 }
 
@@ -507,9 +507,15 @@
   background-position: bottom right;
 }
 
-.adventures-button {
+.single-blog-content-box {
+	width: 650px;
+	font-size: 1.1rem;
+}
 
-
+.blog-category-info-box {
+	display: flex;
+  flex-flow: row nowrap;
+	width: 650px;
 }
 
 

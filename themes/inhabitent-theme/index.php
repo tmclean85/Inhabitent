@@ -32,8 +32,8 @@ get_header(); ?>
 			<div class="blog-excerpt-box">
 				<p><?php the_excerpt(); ?></p>
 			</div>
-			<div class="button-wrapper">	
-			<?php echo '<button class="blog-story-button"><a href="'.get_permalink().'">READ MORE →</a></button>' ?>
+			<div class="button-wrapper">
+				<button><a href="<?php the_permalink(); ?>">READ MORE →</a></button>	
       </div>
 			  <?php endwhile; ?>
 

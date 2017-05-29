@@ -507,6 +507,9 @@ a {
   font-weight: normal;
   font-style: normal; }
 
+.product-type-nav a:hover {
+  color: #634E6B; }
+
 .main-navigation {
   display: -ms-flexbox;
   display: flex;
@@ -1069,11 +1072,11 @@ a {
   .button-wrapper a {
     color: #000;
     text-decoration: none; }
-  .button-wrapper a:hover {
-    color: #FFF; }
   .button-wrapper button:hover {
     background-color: #248A83;
     border: 1px solid #248A83; }
+    .button-wrapper button:hover a {
+      color: #FFF; }
 
 .adventure-wrapper {
   display: -ms-flexbox;
@@ -1145,6 +1148,17 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom right; }
+
+.single-blog-content-box {
+  width: 650px;
+  font-size: 1.1rem; }
+
+.blog-category-info-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  width: 650px; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -1312,3 +1326,13 @@ object {
 
 .taxonomy-description p {
   padding: 1.5rem; }
+
+.entry-content {
+  max-width: 73%; }
+  .entry-content h1 {
+    padding-top: 5rem; }
+  .entry-content h1, .entry-content h2 {
+    color: #2f1339; }
+
+.wpfc7-submit input {
+  background: #248A83; }
