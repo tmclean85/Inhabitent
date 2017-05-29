@@ -3,16 +3,24 @@
 --------------------------------------------------------------*/
 
 .widget-area {
-	display: block;
+	display: flex;
+	flex-flow: column nowrap;
+	padding-left: 1rem;
 	position: absolute;
 	top: 0;
 	right: 0;
 	width: 27%;
+	height: 100%;
+	padding-top: 5rem;
+	border-left: 1px solid lightgrey;
+	list-style-type: none;
+	aside ul {
+		text-align: left;
+	}
 }	
 
 .widget {
 	margin: 0 0 $base__space-unit;
-
 
 .widget-title {
   color: #2f1339;
@@ -22,26 +30,10 @@
 	font-weight: bold;
 }
 
-aside {
-	ul {
-	list-style-type: none;
-
-	}
-  a {
-	text-decoration: none;
-	font-family: 'Merriweather Web';
-  }
-}
-
 #secondary {
 	text-align: left;
 }
 
-#archives-2 {
-	ul {
-		padding: 0;
-	}
-}
 
 	/* Make sure select elements fit in widgets. */
 	select {

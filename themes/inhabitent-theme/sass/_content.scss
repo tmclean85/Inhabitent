@@ -302,6 +302,11 @@
 	background-color: #19625D
 }
 
+.index-main {
+	display: flex;
+	align-items: flex-start;
+}
+
 .blog-post-main {
 	display: flex;
 	flex-flow: column nowrap;

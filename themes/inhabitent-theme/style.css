@@ -365,7 +365,7 @@ hr {
   margin-bottom: 1.5rem; }
 
 ul {
-  list-style: disc; }
+  list-style-type: none; }
 
 ol {
   list-style: decimal; }
@@ -639,11 +639,21 @@ a {
 # Widgets
 --------------------------------------------------------------*/
 .widget-area {
-  display: block;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  padding-left: 1rem;
   position: absolute;
   top: 0;
   right: 0;
-  width: 27%; }
+  width: 27%;
+  height: 100%;
+  padding-top: 5rem;
+  border-left: 1px solid lightgrey;
+  list-style-type: none; }
+  .widget-area aside ul {
+    text-align: left; }
 
 .widget {
   margin: 0 0 1.5rem;
@@ -652,15 +662,8 @@ a {
     color: #2f1339; }
   .widget .biz-day {
     font-weight: bold; }
-  .widget aside ul {
-    list-style-type: none; }
-  .widget aside a {
-    text-decoration: none;
-    font-family: 'Merriweather Web'; }
   .widget #secondary {
     text-align: left; }
-  .widget #archives-2 ul {
-    padding: 0; }
   .widget select {
     max-width: 100%; }
 
@@ -967,6 +970,12 @@ a {
 
 .button-shop:hover {
   background-color: #19625D; }
+
+.index-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+      align-items: flex-start; }
 
 .blog-post-main {
   display: -ms-flexbox;
