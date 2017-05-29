@@ -25,8 +25,8 @@ get_header(); ?>
 			<p><?php the_content(); ?></p> 
 		 </div>		
 		 <div class="blog-category-info-box">			 
-		   <li>POSTED IN →<span class="blog-meta-colour"><?php the_category(); ?></span></li>
-		   <li>TAGGED →<?php the_tags(); ?></li> 			 
+		   <p>POSTED IN →<span class="blog-meta-colour"><?php the_category(); ?></span></p>
+		   <p>TAGGED →<?php the_tags(); ?></p> 			 
 		 </div>	 	
      </div>
 		 

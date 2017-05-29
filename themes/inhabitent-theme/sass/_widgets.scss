@@ -11,7 +11,7 @@
 	right: 0;
 	width: 27%;
 	height: 100%;
-	padding-top: 5rem;
+	padding-top: 8rem;
 	border-left: 1px solid lightgrey;
 	list-style-type: none;
 	aside ul {
@@ -21,6 +21,7 @@
 
 .widget {
 	margin: 0 0 $base__space-unit;
+
 
 .widget-title {
   color: #2f1339;
@@ -32,6 +33,13 @@
 
 #secondary {
 	text-align: left;
+}
+
+.widget-text {
+		color: #248A83;
+		i {
+			color: #000;
+		}	
 }
 
 

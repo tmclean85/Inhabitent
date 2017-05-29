@@ -515,7 +515,16 @@
 .blog-category-info-box {
 	display: flex;
   flex-flow: row nowrap;
+	justify-content: flex-start;
+	list-style-type: none;
 	width: 650px;
+	font-family: 'Novecento Web';
+  a {
+	  font-family: 'Novecento Web';
+  	text-decoration: none;
+		color: #248A83;	
+	}
+
 }
 
 

@@ -443,8 +443,6 @@ textarea {
 /* Links */
 a {
   color: royalblue; }
-  a:visited {
-    color: purple; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -651,7 +649,7 @@ a {
   right: 0;
   width: 27%;
   height: 100%;
-  padding-top: 5rem;
+  padding-top: 8rem;
   border-left: 1px solid lightgrey;
   list-style-type: none; }
   .widget-area aside ul {
@@ -666,6 +664,10 @@ a {
     font-weight: bold; }
   .widget #secondary {
     text-align: left; }
+  .widget .widget-text {
+    color: #248A83; }
+    .widget .widget-text i {
+      color: #000; }
   .widget select {
     max-width: 100%; }
 
@@ -1158,7 +1160,15 @@ a {
   display: flex;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
-  width: 650px; }
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  list-style-type: none;
+  width: 650px;
+  font-family: 'Novecento Web'; }
+  .blog-category-info-box a {
+    font-family: 'Novecento Web';
+    text-decoration: none;
+    color: #248A83; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -1333,6 +1343,3 @@ object {
     padding-top: 5rem; }
   .entry-content h1, .entry-content h2 {
     color: #2f1339; }
-
-.wpfc7-submit input {
-  background: #248A83; }
