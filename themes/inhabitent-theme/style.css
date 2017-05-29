@@ -402,8 +402,7 @@ p a {
 
 .home-posts button {
   font-family: 'Novecento Web';
-  color: #000;
-  text-shadow: 0.2px 0.2px 0.2px #000; }
+  color: #000; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -976,6 +975,44 @@ a {
   display: flex;
   -ms-flex-align: start;
       align-items: flex-start; }
+
+.main-journal-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 7rem 0 5rem 0; }
+
+.main-journal-image-box {
+  width: 45%;
+  height: 100%; }
+
+.main-journal-button-wrapper {
+  width: 50%; }
+  .main-journal-button-wrapper button, .main-journal-button-wrapper i {
+    color: #000;
+    background: #FFF;
+    box-shadow: none;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem; }
+  .main-journal-button-wrapper button {
+    border: 1px solid #000;
+    font-family: 'Novecento Web'; }
+  .main-journal-button-wrapper button:hover {
+    background: #248A83;
+    color: #FFF;
+    border: 1px solid #248A83; }
+    .main-journal-button-wrapper button:hover i {
+      background: #248A83;
+      color: #FFF; }
+
+.main-journal-content-box {
+  max-width: 50%; }
+  .main-journal-content-box h1 {
+    color: #d99054; }
+  .main-journal-content-box h2 {
+    font-weight: 200; }
 
 .blog-post-main {
   display: -ms-flexbox;

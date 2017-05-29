@@ -307,6 +307,54 @@
 	align-items: flex-start;
 }
 
+.main-journal-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 7rem 0 5rem 0;
+}
+
+.main-journal-image-box {
+	width: 45%;
+	height: 100%;
+}
+
+.main-journal-button-wrapper {
+	width: 50%;
+
+	button,i {
+	  color: #000;
+	  background: #FFF;
+	  box-shadow: none;
+		padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+	}
+	button {
+		border: 1px solid #000;
+		font-family: 'Novecento Web';
+
+	}
+	button:hover {
+		background: #248A83;
+		color: #FFF;
+		border: 1px solid #248A83;
+		i {
+		  background: #248A83;
+		  color: #FFF;	
+	}
+
+	}
+}
+
+.main-journal-content-box {
+	max-width: 50%;
+	h1 {
+		color: #d99054;
+	}
+	h2 {
+		font-weight: 200;
+	}
+}
+
 .blog-post-main {
 	display: flex;
 	flex-flow: column nowrap;

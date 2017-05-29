@@ -11,12 +11,22 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-
+	<section class="main-journal-wrapper">
+    <div class="main-journal-image-box">
+      <?php the_post_thumbnail('large'); ?>
+		</div>
+		<div class="main-journal-content-box">	
+			<h1><?php the_title(); ?></h1>
       <h2>$<?php echo CFS()->get( 'price' ); ?></h2>
+			<p><?php the_content(); ?></p>
+		  <div class="main-journal-button-wrapper">
+			  <button class="post-social-media"><i class="fa fa-facebook" aria-hidden="true"></i>LIKE</button>
+			  <button class="post-social-media"><i class="fa fa-twitter" aria-hidden="true"></i>TWEET</button>
+			  <button class="post-social-media"><i class="fa fa-pinterest" aria-hidden="true"></i>PIN</button>
+		  </div>				
+    </div>
 
-			<?php the_post_navigation(); ?>
+  </section>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.

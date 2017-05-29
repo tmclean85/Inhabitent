@@ -46,7 +46,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>				
 				<!--get_template_part( 'template-parts/content' );-->
 		<div class="archive-product-minibox">		
-		  <?php the_post_thumbnail('medium'); ?>	
+		  <a href="<?php the_permalink() ?>"><?php the_post_thumbnail('medium'); ?></a>	
 			<div class="archive-product-footer">			
 			  <span><?php the_title(); ?></span><span class="dots"></span><span>$<?php echo CFS()->get( 'price' ); ?></span>
 		  </div><!--archive-product-footer -->
