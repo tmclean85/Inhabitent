@@ -826,6 +826,8 @@ a {
   text-align: left; }
   .home-post-footer h2 {
     color: #248A83; }
+  .home-post-footer h2:hover {
+    color: #2f1339; }
   .home-post-footer button {
     font-family: 'Novecento Web';
     font-weight: light;
