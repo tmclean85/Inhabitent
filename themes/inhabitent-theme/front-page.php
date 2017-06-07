@@ -72,7 +72,7 @@ $posts = new WP_Query( $postArgs ); ?>
 <div class="journal-wrapper-main">
 	<h1>INHABITENT JOURNAL</h1>
 	<div class="home-posts-wrapper">	
-		<?php $products = new WP_Query( $postArgs ); ?>
+		<?php $products = get_posts( $postArgs ); ?>
 <?php if ( $posts->have_posts() ) : ?>
    <?php while ( $posts->have_posts() ) : $posts->the_post(); ?>	
 	 <div class="single-home-post"> 
