@@ -144,13 +144,43 @@ a {
 	}
 }
 
-#search-form {
-	display: none;
+.search-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.search-form-long {
-	display: inline;
+.search-submit {
+	background: transparent;
+	border: none;	
+	outline: none;
+	padding-right: 0;	
 }
+
+fieldset {
+	padding-right: 0;
+}
+
+
+
+.search-field {
+	display: none;
+	background: transparent;
+	border: none;
+	color: #000;
+	outline: none;
+}
+
+
+.search-form {
+  fieldset {
+		border: none;
+		padding-left: 1rem;
+		padding-top: 0.8rem;
+	}
+
+}
+
 
 /* Small menu. */
 .menu-toggle,
