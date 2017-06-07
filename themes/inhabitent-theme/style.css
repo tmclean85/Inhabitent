@@ -1413,7 +1413,10 @@ object {
     color: #2f1339; }
 
 .about-box {
-  width: 650px; }
+  width: 650px;
+  margin-left: 25rem; }
+  .about-box h1 {
+    text-align: center; }
 
 .search-page-spacer {
   display: -ms-flexbox;
