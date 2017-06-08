@@ -1332,7 +1332,7 @@ object {
   width: 4rem; }
 
 .main-hero-banner {
-  background: url("/wordpress/wp-content/themes/inhabitent-theme/images/inhabitent-logo-full.svg"), linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/wordpress/wp-content/themes/inhabitent-theme/images/home-hero.jpg");
+  background: url("../../images/inhabitent-logo-full.svg"), linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/wordpress/wp-content/themes/inhabitent-theme/images/home-hero.jpg");
   background-repeat: no-repeat, no-repeat, repeat-x;
   background-size: contain, contain, cover;
   background-position: center, center, top 5rem right 0 bottom 0 left 0;
