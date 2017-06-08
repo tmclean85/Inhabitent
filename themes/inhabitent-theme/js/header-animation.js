@@ -4,6 +4,7 @@
 	$searchIcon.click(function(event){
 		event.preventDefault();
     $searchField.show({duration:500});
+    $searchField.focus();
     console.log('mic check..');
 	});
 

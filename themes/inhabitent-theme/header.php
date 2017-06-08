@@ -23,7 +23,7 @@
 			<header id="masthead" class="site-header" role="banner">
 			<div class="header-control-wrapper">
 				<div class="site-branding">
-					<a href="<?php echo home_url( '/' ); ?>"><img class="nav-logo" src="/wordpress/wp-content/themes/inhabitent-theme/images/inhabitent-logo-tent.svg" alt="small-inhabitent-logo"></a>
+					<a href="<?php echo home_url( '/' ); ?>"><img class="nav-logo" src="<?php echo get_template_directory_uri() ?>/images/inhabitent-logo-tent.svg" alt="small-inhabitent-logo"></a>
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->

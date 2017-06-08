@@ -147,7 +147,7 @@ add_filter( 'login_headertitle', 'inhabitent_login_logo_url_title' );
 function hero_banner() {
   echo '<div class="hero-main">
     <div class="main-logo-wrapper">
-    <img src="' . get_template_directory_uri() .  '/images/inhabitent-logo-full.svg">
+    <img src="/wordpress/wp-content/themes/inhabitent-theme/images/inhabitent-logo-full.svg">
     </div>
     </div>';
 }

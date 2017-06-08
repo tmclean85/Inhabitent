@@ -23,7 +23,7 @@
 					<p><span class="bold-text">Sunday:</span> Closed</p>
 				</div>	
 				<div class="footer-box" id="footer-box-long">
-          <img src="/wordpress/wp-content/themes/inhabitent-theme/images/inhabitent-logo-text.svg">
+          <img src="<?php echo get_template_directory_uri() ?>/images/inhabitent-logo-text.svg">
 				</div>	
 			</footer><!-- #colophon -->
 		
