@@ -43,7 +43,7 @@
 }
 
 .hero-main {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/wordpress/wp-content/themes/inhabitent-theme/images/home-hero.jpg");
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/home-hero.jpg");
   background-repeat: no-repeat, repeat-x;
   background-size: contain, cover;
   background-position: center, top 5rem right 0 bottom 0 left 0;
@@ -59,7 +59,7 @@
 }
 
 .hero-about {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/wordpress/wp-content/themes/inhabitent-theme/images/about-hero-compressor.jpg");
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/about-hero-compressor.jpg");
   background-repeat: no-repeat, repeat-x;
   background-size: contain, cover;
   background-position: center, center;
@@ -460,7 +460,7 @@
 .adventure-box-large {
 	height: 100%;
 	width: 50%;
-	background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/wordpress/wp-content/themes/inhabitent-theme/images/adventure-photos/canoe-girl.jpg");
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/canoe-girl.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center; 
@@ -468,7 +468,7 @@
 }
 
 .adventure-box-long {
-	background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/wordpress/wp-content/themes/inhabitent-theme/images/adventure-photos/beach-bonfire.jpg");
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/beach-bonfire.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center; 	
@@ -503,7 +503,7 @@
 }
 
 #first-box {
-	background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/wordpress/wp-content/themes/inhabitent-theme/images/adventure-photos/mountain-hikers.jpg");
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/mountain-hikers.jpg");
 	margin-right: 2.3rem;
 		background-size: cover;
 	background-repeat: no-repeat;
@@ -511,7 +511,7 @@
 }
 
 #second-box {
-	background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/wordpress/wp-content/themes/inhabitent-theme/images/adventure-photos/night-sky.jpg");		
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/adventure-photos/night-sky.jpg");		
 		background-size: cover;
 	background-repeat: no-repeat;
   background-position: bottom right;

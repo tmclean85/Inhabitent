@@ -14,7 +14,6 @@
 <?php hero_banner_about() ?>
 <h1 class="about-hero-text">ABOUT</h1>
 </div>
-<!--<?php echo CFS()->get( 'hero_image' ); ?>-->
 <div class="about-box">
 <p><?php echo CFS()->get( 'our_story' ); ?></p>
 <p><?php echo CFS()->get( 'our_team' ); ?></p>
