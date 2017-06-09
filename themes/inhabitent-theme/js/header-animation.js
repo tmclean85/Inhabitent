@@ -5,7 +5,6 @@
 		event.preventDefault();
     $searchField.show({duration:500});
     $searchField.focus();
-    console.log('mic check..');
 	});
 
   $searchField.click(function(event){
@@ -15,6 +14,5 @@
 	$searchField.focusout(function(event){
     event.preventDefault();
     $searchField.hide({duration:500});    
-    console.log('one two..');
 	});
 

@@ -25,8 +25,7 @@
 				<div class="footer-box" id="footer-box-long">
           <img src="<?php echo get_template_directory_uri() ?>/images/inhabitent-logo-text.svg">
 				</div>	
-			</footer><!-- #colophon -->
-		
+			</footer><!-- #colophon -->		
 		</div>	
 					<div class="site-info">
 				<p>COPYRIGHT 2017 INHABITENT</p>
