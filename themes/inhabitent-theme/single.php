@@ -26,7 +26,7 @@ get_header(); ?>
 		 </div>		
 		 <div class="blog-category-info-box">			 
 		   <p>POSTED IN →<span class="blog-meta-colour"><?php the_category(); ?></span></p>
-		   <p>TAGGED →<?php the_tags(); ?></p> 			 
+		   <p>TAGGED →<?php the_tags(''); ?></p> 			 
 		 </div>	 	
 		  <div class="main-journal-button-wrapper">
 			  <button class="post-social-media"><i class="fa fa-facebook" aria-hidden="true"></i>LIKE</button>

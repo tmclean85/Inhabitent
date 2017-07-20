@@ -4,7 +4,6 @@
  *
  * @package RED_Starter_Theme
  */
-
 ?>
 
 			</div><!-- #content -->
